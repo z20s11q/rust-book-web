@@ -1,0 +1,16 @@
+
+:root { --book-scale: 1; }
+.md-typeset { font-size: calc(0.8rem * var(--book-scale)); }
+.md-typeset code, .md-typeset pre { font-size: calc(0.85em); }
+#fontsize-ctl {
+  display: inline-flex; align-items: center; gap: .15rem;
+  margin-left: .4rem; color: var(--md-primary-bg-color);
+}
+#fontsize-ctl button {
+  cursor: pointer; border: 1px solid rgba(255,255,255,.55); border-radius: .2rem;
+  background: transparent; color: inherit; font: inherit; line-height: 1;
+  padding: .15rem .4rem; min-width: 1.6rem;
+}
+#fontsize-ctl button:hover { background: rgba(255,255,255,.15); }
+#fontsize-ctl .pct { font-size: .6rem; min-width: 2.2rem; text-align: center; opacity: .85; }
+@media screen and (max-width: 44.9375em) { #fontsize-ctl .pct { display: none; } }
